@@ -1,0 +1,110 @@
+*{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.container{
+    display: flex;
+}
+.chicken{
+    flex: 1;
+    background-color: gray;
+    margin: 20px;
+    border: black 3px solid;
+}
+
+.beef{
+    flex: 1;
+    background-color: rgb(181, 197, 88);
+    margin: 20px;
+    border: black 3px solid;
+}
+
+.sushi{
+    flex: 1;
+    background-color: rgb(130, 221, 183);
+    margin: 20px;
+    border: black 3px solid;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.chicken h2{
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color: red;
+    margin-left: 200px;
+    margin-top: initial;
+    padding-right: 20px;
+    font-size: 30px;
+    border:1px solid black;
+    border-width:thick;
+}
+
+.beef h2{
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color:purple;
+    margin-left: 200px;
+    margin-top: initial;
+    padding-right: 25px;
+    font-size: 30px;
+    border:1px solid black;
+    border-width:thick;
+}
+
+.sushi h2{
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color:forestgreen;
+    margin-left: 200px;
+    margin-top: initial;
+    padding-right: 25px;
+    font-size: 30px;
+    border:1px solid black;
+    border-width:thick;
+}
+
+
+p{
+    padding: 20px;
+}
+
+.container1{
+    display: none;
+}
+
+@media screen and (max-width:991px)
+{
+    .container1{
+        display: grid;
+    }
+
+    .first{
+        display: flex;
+    }
+
+    .chicken{
+        flex: 1;
+    }
+    .beef{
+        flex: 1;
+    }
+
+    .container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .container{
+        display: grid;
+    }
+    .container1{
+        display: none;
+    }
+}
